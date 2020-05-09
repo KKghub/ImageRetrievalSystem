@@ -2,7 +2,24 @@
 The Project implements Image based search
 
 ## Setting up server
-Assuming you have all the python dependencies installed
+Assuming you have all the python dependencies installed, the dataset should be in the following structure
+```
+ImageRetrievalSystem
+│
+└───ClassifiedDatasetImages
+    │
+    └───cars
+    │   └───file02.jpeg
+    │   └───file11xy2.jpeg
+    │   └───...
+    │
+    └───bikes
+    │   └───file089.jpeg
+    │   └───filexty.jpeg
+    │   └───...
+    ...
+```
+where `cars` and `bikes` are labels and files inside them can be arbitrary named image files
 ```
 cd server
 python train_and_build.py
