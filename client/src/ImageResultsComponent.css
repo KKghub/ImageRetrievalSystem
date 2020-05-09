@@ -1,0 +1,22 @@
+/* .result-component {
+    display: grid;
+    width: 40px;
+    grid-gap: 10px 10px;
+    max-width: 300px;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+  }
+  
+  .container>.item {
+    padding: 12px;
+    background-color: yellow;
+  }
